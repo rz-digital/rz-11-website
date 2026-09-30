@@ -292,7 +292,7 @@ export default function Home() {
           <p className="mini-kicker">Your next system starts here</p>
           <h2>Let&apos;s make the complex<br /><em>clear.</em></h2>
         </div>
-        <a className="contact-button" href="mailto:info@rz11consultancy.com">
+        <a className="contact-button" href="mailto:support@rz-consultancy.com">
           <span>Start a conversation</span>
           <Arrow diagonal />
         </a>
