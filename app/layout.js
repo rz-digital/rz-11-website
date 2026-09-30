@@ -13,14 +13,16 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata = {
   title: "RZ-11 Consultancy | Digital Systems That Move Business Forward",
   description:
     "RZ-11 delivers IT consultancy, tailor-made software, observability, smart solutions, and AI and semiconductor solutions.",
   icons: {
-    icon: "/rz-11-logo.png",
-    shortcut: "/rz-11-logo.png",
-    apple: "/rz-11-logo.png",
+    icon: `${basePath}/rz-11-logo.png`,
+    shortcut: `${basePath}/rz-11-logo.png`,
+    apple: `${basePath}/rz-11-logo.png`,
   },
 };
 

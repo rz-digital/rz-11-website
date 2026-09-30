@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const solutions = [
   {
     title: "IT Consultancy",
@@ -86,7 +88,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="RZ-11 home" onClick={closeMenu}>
-          <Image src="/rz-11-logo.png" width={1312} height={1080} alt="RZ-11 Consultancy" priority />
+          <Image src={`${basePath}/rz-11-logo.png`} width={1312} height={1080} alt="RZ-11 Consultancy" priority />
         </a>
 
         <nav className={menuOpen ? "nav open" : "nav"} aria-label="Primary navigation">
@@ -127,7 +129,7 @@ export default function Home() {
           <div className="orbit orbit-two" />
           <div className="hero-grid" />
           <div className="system-core">
-            <Image src="/rz-11-logo.png" width={1312} height={1080} alt="RZ-11 Consultancy" />
+            <Image src={`${basePath}/rz-11-logo.png`} width={1312} height={1080} alt="RZ-11 Consultancy" />
           </div>
           <div className="signal signal-one"><i /> Strategy</div>
           <div className="signal signal-four"><i /> Innovation</div>
@@ -147,7 +149,7 @@ export default function Home() {
         <div className="customer-names">
           <span className="customer-logo ugafco-logo">
             <Image
-              src="/ugafco-logo.png"
+              src={`${basePath}/ugafco-logo.png`}
               width={1769}
               height={889}
               alt="UGAFCO"
@@ -156,7 +158,7 @@ export default function Home() {
           <i />
           <span className="customer-logo dib-logo">
             <Image
-              src="/dubai-islamic-bank-logo.png"
+              src={`${basePath}/dubai-islamic-bank-logo.png`}
               width={1600}
               height={383}
               alt="Dubai Islamic Bank"
@@ -165,7 +167,7 @@ export default function Home() {
           <i />
           <span className="customer-logo finance-logo">
             <Image
-              src="/department-of-finance-logo.png"
+              src={`${basePath}/department-of-finance-logo.png`}
               width={1983}
               height={793}
               alt="Department of Finance"
@@ -298,7 +300,7 @@ export default function Home() {
 
       <footer>
         <a className="footer-brand" href="#top" aria-label="Back to top">
-          <Image src="/rz-11-logo.png" width={1312} height={1080} alt="RZ-11 Consultancy" />
+          <Image src={`${basePath}/rz-11-logo.png`} width={1312} height={1080} alt="RZ-11 Consultancy" />
         </a>
         <p>Digital systems for financial and non-financial industries.</p>
         <nav aria-label="Footer navigation">
