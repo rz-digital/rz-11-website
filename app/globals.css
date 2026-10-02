@@ -296,8 +296,10 @@ footer nav a:hover { color: var(--blue); }
   .section { padding-inline: 24px; }
   .story-body { grid-template-columns: 1fr; margin-top: 55px; }
   .story-columns { grid-template-columns: 1fr; }
-  .solution-explorer { grid-template-columns: 1fr; margin-top: 60px; }
-  .solution-panel { min-height: 430px; }
+  .solution-explorer { display: flex; flex-direction: column; gap: 0; margin-top: 60px; }
+  .solution-tabs { display: contents; }
+  .solution-tabs button { order: var(--tab-order); }
+  .solution-panel { order: var(--panel-order); min-height: 430px; }
   .product-grid { grid-template-columns: 1fr; margin-top: 55px; }
   .product-card { min-height: 360px; }
   .product-card h3 { margin-top: 70px; }

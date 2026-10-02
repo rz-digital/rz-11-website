@@ -215,6 +215,7 @@ export default function Home() {
                 role="tab"
                 aria-selected={activeSolution === index}
                 aria-controls="solution-panel"
+                style={{ "--tab-order": index * 2 }}
                 onClick={() => setActiveSolution(index)}
               >
                 <span>{String(index + 1).padStart(2, "0")}</span>
@@ -224,7 +225,12 @@ export default function Home() {
             ))}
           </div>
 
-          <article className="solution-panel" id="solution-panel" role="tabpanel">
+          <article
+            className="solution-panel"
+            id="solution-panel"
+            role="tabpanel"
+            style={{ "--panel-order": activeSolution * 2 + 1 }}
+          >
             <div className="panel-index">{String(activeSolution + 1).padStart(2, "0")} / 05</div>
             <p className="mini-kicker">{solution.eyebrow}</p>
             <h3>{solution.title}</h3>
