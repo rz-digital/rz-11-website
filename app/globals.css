@@ -291,7 +291,7 @@ footer nav a:hover { color: var(--blue); }
   .signal { font-size: .52rem; }
   .hero-scroll { display: none; }
   .trust-strip { padding-inline: 24px; }
-  .customer-names { align-items: flex-start; flex-direction: column; }
+  .customer-names { align-items: center; flex-direction: column; }
   .customer-names i { display: none; }
   .section { padding-inline: 24px; }
   .story-body { grid-template-columns: 1fr; margin-top: 55px; }
