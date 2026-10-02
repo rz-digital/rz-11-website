@@ -11,7 +11,7 @@
   --body: var(--font-body), sans-serif;
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; -webkit-user-select: none; user-select: none; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 
@@ -224,6 +224,9 @@ section[id] { scroll-margin-top: 88px; }
 .services-title { position: sticky; top: 140px; align-self: start; }
 .services-title h2 { margin-top: 22px; font-size: clamp(3rem, 5vw, 5.8rem); }
 .services-title > p:last-child { max-width: 440px; margin-top: 35px; color: var(--muted); font-size: .9rem; }
+.genesys-support { max-width: 440px; margin-top: 42px; padding: 24px; border-left: 3px solid var(--blue); background: var(--paper); }
+.genesys-support h3 { margin: 12px 0; font-family: var(--display); font-size: 1.35rem; font-weight: 600; letter-spacing: -.03em; line-height: 1.15; }
+.genesys-support > p:last-child { margin: 0; color: var(--muted); font-size: .78rem; }
 .service-list { padding: 0; margin: 0; list-style: none; }
 .service-list li { display: grid; grid-template-columns: 44px 1fr 28px; align-items: center; min-height: 88px; border-bottom: 1px solid var(--line); transition: color .25s, padding .25s, background .25s; }
 .service-list li:first-child { border-top: 1px solid var(--line); }
@@ -296,6 +299,7 @@ footer nav a:hover { color: var(--blue); }
   .section { padding-inline: 24px; }
   .story-body { grid-template-columns: 1fr; margin-top: 55px; }
   .story-columns { grid-template-columns: 1fr; }
+  .blueprint-word { top: 10px; left: 50%; font-size: clamp(3rem, 17vw, 5rem); transform: translateX(-50%); }
   .solution-explorer { display: flex; flex-direction: column; gap: 0; margin-top: 60px; }
   .solution-tabs { display: contents; }
   .solution-tabs button { order: var(--tab-order); }

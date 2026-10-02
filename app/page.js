@@ -40,7 +40,7 @@ const solutions = [
 
 const services = [
   "Consulting & application audit",
-  "Contact center implementation",
+  "Genesys Cloud implementation & remote support",
   "Infrastructure management",
   "Application development",
   "SharePoint development",
@@ -187,7 +187,7 @@ export default function Home() {
             RZ-11 Consultancy is an ambitious technology partner with a strong record of successful projects across financial and non-financial industries.
           </p>
           <div className="story-columns">
-            <p>From our office in the United Arab Emirates, we provide on-site and off-site support—translating business requirements into mission-critical solutions with clarity and care.</p>
+            <p>From our UAE office and branches in Sri Lanka and India, we provide on-site and off-site support—translating business requirements into mission-critical solutions with clarity and care.</p>
             <p>Robust development processes, modern infrastructure, and dedicated teams trained around each client help us remove uncertainty and deliver with confidence.</p>
           </div>
         </div>
@@ -270,6 +270,11 @@ export default function Home() {
             <p className="mini-kicker">From advisory to operation</p>
             <h2>The right expertise,<br />at the right point.</h2>
             <p>Specialist support across the full technology lifecycle, built to strengthen teams and move critical work forward.</p>
+            <aside className="genesys-support">
+              <p className="mini-kicker">Genesys Cloud CX</p>
+              <h3>Remote expertise, when your team needs it.</h3>
+              <p>Remote support for configuration, user and queue administration, routing and flow updates, integrations, reporting, troubleshooting, and ongoing optimisation.</p>
+            </aside>
           </div>
           <ol className="service-list">
             {services.map((service, index) => (
@@ -287,7 +292,7 @@ export default function Home() {
         <p className="kicker"><span /> The RZ-11 standard</p>
         <blockquote>Understand deeply.<br />Build rigorously.<br /><em>Support continuously.</em></blockquote>
         <div className="principle-stats">
-          <div><strong>UAE</strong><span>On-site &amp; off-site support</span></div>
+          <div><strong>03</strong><span>UAE, Sri Lanka &amp; India locations</span></div>
           <div><strong>24/7</strong><span>Mission-critical mindset</span></div>
           <div><strong>01</strong><span>Accountable delivery partner</span></div>
         </div>
@@ -316,7 +321,7 @@ export default function Home() {
           <a href="#services">Services</a>
         </nav>
         <div className="footer-meta">
-          <span>United Arab Emirates</span>
+          <span>United Arab Emirates · Sri Lanka · India</span>
           <span>© {new Date().getFullYear()} RZ-11 Consultancy</span>
         </div>
       </footer>
